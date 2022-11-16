@@ -5,10 +5,10 @@
     </ion-buttons>
     <ion-segment *ngIf="ios" [(ngModel)]="segment" (ionChange)="updateSchedule()">
       <ion-segment-button value="all">
-        All
+        Updates
       </ion-segment-button>
       <ion-segment-button value="favorites">
-        Favorites
+        Advertisement
       </ion-segment-button>
     </ion-segment>
     <ion-title *ngIf="!ios && !showSearchbar">Home</ion-title>
@@ -31,7 +31,7 @@
         All
       </ion-segment-button>
       <ion-segment-button value="favorites">
-        Favorites
+        Dashboard
       </ion-segment-button>
     </ion-segment>
   </ion-toolbar>
