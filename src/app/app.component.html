@@ -5,7 +5,7 @@
       <ion-content>
         <ion-list lines="none">
           <ion-list-header>
-            Conference
+            Maliek News
           </ion-list-header>
           <ion-menu-toggle autoHide="false" *ngFor="let p of appPages; let i = index">
             <ion-item [routerLink]="p.url" routerLinkActive="selected" routerDirection="root" detail="false">
@@ -20,7 +20,7 @@
 
         <ion-list *ngIf="loggedIn" lines="none">
           <ion-list-header>
-            Account
+            Accounts
           </ion-list-header>
 
           <ion-menu-toggle autoHide="false">
@@ -79,7 +79,7 @@
             <ion-item routerLink="/signup" routerLinkActive="active" routerDirection="root" detail="false">
               <ion-icon slot="start" name="person-add"></ion-icon>
               <ion-label>
-                Signup
+                Contact Us
               </ion-label>
             </ion-item>
           </ion-menu-toggle>
@@ -95,7 +95,7 @@
 
         <ion-list lines="none">
           <ion-list-header>
-            Tutorial
+            About Us
           </ion-list-header>
           <ion-menu-toggle autoHide="false">
             <ion-item button (click)="openTutorial()" detail="false">
