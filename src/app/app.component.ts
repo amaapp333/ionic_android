@@ -20,17 +20,17 @@ import { UserData } from './providers/user-data';
 export class AppComponent implements OnInit {
   appPages = [
     {
-      title: 'Schedule',
+      title: 'Mobile News',
       url: '/app/tabs/schedule',
       icon: 'calendar'
     },
     {
-      title: 'Speakers',
+      title: 'Cash Gold',
       url: '/app/tabs/speakers',
       icon: 'people'
     },
     {
-      title: 'Map',
+      title: 'Sponsored',
       url: '/app/tabs/map',
       icon: 'map'
     },
@@ -41,7 +41,7 @@ export class AppComponent implements OnInit {
     }
   ];
   loggedIn = false;
-  dark = false;
+  dark = true;
 
   constructor(
     private menu: MenuController,
