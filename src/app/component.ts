@@ -3,18 +3,18 @@ import { Component } from '@angular/core';
 import { ActionSheetController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-example',
-  templateUrl: 'example.component.html',
-  styleUrls: ['./example.component.css'],
+  selector: 'component',
+  templateUrl: 'component.html',
+  styleUrls: ['./component.css'],
 })
-export class ExampleComponent {
+export class Component {
   constructor(private actionSheetCtrl: ActionSheetController) {}
 
   async presentActionSheet() {
     const actionSheet = await this.actionSheetCtrl.create({
       header: 'Maliek News',
       subHeader: 'Subscribe Blogs',
-      cssClass: 'custom-class',
+      cssClass: 'global.css',
       buttons: [
         {
           text: 'Delete',
